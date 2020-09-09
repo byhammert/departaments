@@ -11,7 +11,7 @@ De acordo com as orientações abaixo, desenvolva um sistema web.
 ## Tecnologias ##
 
 - **Java**: OPENJDK_11
-- **SPRING BOOT**: versão 2.3.1
+- **SPRING BOOT**: versão 2.3.3
 - **Banco de dados**: utilize um banco relacional (Oracle, PostgreSQL, MySQL)
 - **Front**: livre escolha
 - **Build tool**: Maven ou Gradle
@@ -58,6 +58,8 @@ Mapeia uma tabela do banco de dados.
 	- Exemplo: http://localhost:8080/api/professional-classes
 - Use sub recursos nos relacionamentos, através do caractere barra "/".
 	- Exemplo: http://localhost:8080/api/addresses/cities
+- Para buscar/apagar recursos únicos, utilize o parâmetro no path:
+    - Exemplo: 	http://localhost:8080/api/addresses/cities/{id}
 - Em uma consulta, receba os filtros através de query parameters.
 	- Exemplo: [http://localhost:8080/api/addresses?city=SAO%20PAULO&logradouro=Sao%20Gabriel&uf=SP](http://localhost:8080/api/addresses?city=SAO PAULO&logradouro=Sao Gabriel&uf=SP)
 - Método GET deve ser utilizado somente em consultas e não deve atualizar informações da aplicação.
